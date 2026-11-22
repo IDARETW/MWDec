@@ -1,0 +1,20 @@
+# Build output
+build/
+build_*/
+
+# Working output: game executables, decrypted images, exports, dumps, results
+out/
+__pycache__/
+*.pyc
+
+# Never commit game binaries, dumps or debugger databases
+*.exe
+*.dll
+*.dmp
+*.npy
+*.i64
+*.idb
+*.rva
+
+# Local tooling
+.claude/

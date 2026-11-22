@@ -1,0 +1,80 @@
+{
+ "about": "Build 19936: corrections to the writer descriptor, found by running every protection routine of the decrypted image under emulation (MWHook docs/research/013_removal_log.md). stream: the writer lays its stash over this range list, not the shorter one the descriptor names. reclassify: descriptor entries filed as re-encryptors whose output is code. append: decryptors the descriptor has no entry for; parameters read from a trace of the routine (tools/arxan/d9_writer_trace.py).",
+ "stream": {
+  "0x23fc4fe1": "0x271fff38"
+ },
+ "reclassify": [
+  "0x2748256f",
+  "0x258b2f1f",
+  "0x25f40dd0",
+  "0x28df9198",
+  "0x251a1b5d",
+  "0x278f9bbf",
+  "0x26db8fe6"
+ ],
+ "append": [
+  {
+   "id": "0x4411a0",
+   "variant": "mul_rol",
+   "stream": "0x2569b7b6",
+   "stash": "0x40fdd5b",
+   "key_src": "0x1f6cf21",
+   "total": 818,
+   "role": "code_decrypt"
+  },
+  {
+   "id": "0x25150ff9",
+   "variant": "mul_rol",
+   "stream": "0x26d1c6a8",
+   "stash": "0x286a23c7",
+   "key_src": "0x414b899",
+   "total": 478,
+   "role": "code_decrypt"
+  },
+  {
+   "id": "0x257d3590",
+   "variant": "mul_rol",
+   "stream": "0x1a65cc9",
+   "stash": "0x23aabcec",
+   "key_src": "0x218c659",
+   "total": 725,
+   "role": "code_decrypt"
+  },
+  {
+   "id": "0x2606b1f8",
+   "variant": "mul_rol",
+   "stream": "0x243af147",
+   "stash": "0x23bb6afe",
+   "key_src": "0x21c2715",
+   "total": 892,
+   "role": "code_decrypt"
+  },
+  {
+   "id": "0x27364f7b",
+   "variant": "xor_auto",
+   "stream": "0x23266288",
+   "stash": "0x1a70d6c",
+   "key_src": "0x1f283b4",
+   "total": 514,
+   "role": "code_decrypt"
+  },
+  {
+   "id": "0x2770a2bd",
+   "variant": "mul_rol",
+   "stream": "0x19543ea",
+   "stash": "0x277e607e",
+   "key_src": "0x425a33",
+   "total": 741,
+   "role": "code_decrypt"
+  },
+  {
+   "id": "0x28945d72",
+   "variant": "xor_rip",
+   "stream": "0x6fc4e80",
+   "stash": "0x2688b5cf",
+   "key_src": "0x20b5643",
+   "total": 775,
+   "role": "code_decrypt"
+  }
+ ]
+}
